@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cat" representedClassName="Cat" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cutenessLevel" optional="YES" attributeType="String"/>
+        <attribute name="imageName" optional="YES" attributeType="String"/>
+        <attribute name="isHungry" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <fetchRequest name="FetchRequestAll" entity="Cat"/>
+    <fetchRequest name="FetchRequestOld" entity="Cat" predicateString="age &gt;= 3"/>
+    <fetchRequest name="FetchRequestYoung" entity="Cat" predicateString="age &lt; 3"/>
+    <elements>
+        <element name="Cat" positionX="-45" positionY="0" width="128" height="104"/>
+    </elements>
+</model>

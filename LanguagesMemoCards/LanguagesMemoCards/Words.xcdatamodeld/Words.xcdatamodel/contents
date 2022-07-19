@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Wordd" representedClassName="Wordd" syncable="YES">
+        <attribute name="dataToAppear" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="detailEnglish" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="detailRussian" optional="YES" attributeType="String"/>
+        <attribute name="englishWord" optional="YES" attributeType="String"/>
+        <attribute name="level" attributeType="String"/>
+        <attribute name="numberID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="russianWord" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="Wordd" predicateString="dataToAppear &lt; CAST(764997196.010499, &quot;NSDate&quot;) OR detailRussian CONTAINS &quot;&quot; OR detailEnglish CONTAINS &quot;&quot; OR dataToAppear == CAST(670249560.597720, &quot;NSDate&quot;) OR state == &quot;new&quot;"/>
+    <elements>
+        <element name="Wordd" positionX="-54" positionY="-9" width="128" height="149"/>
+    </elements>
+</model>
